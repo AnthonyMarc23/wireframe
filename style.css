@@ -74,6 +74,10 @@ h3 {
   text-align: center;
 }
 
+.logo-hidden {
+  display: none;
+}
+
 .shift {
   position: relative;
   top: -20px;
@@ -136,8 +140,9 @@ h3 {
   }
 
   main {
-    display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+    display: block;
+    /* flex-wrap: wrap; */
   }
 
   h1 {
@@ -150,5 +155,28 @@ h3 {
 
   p {
     display: none;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .live-map {
+    flex-grow: 1;
+  }
+
+  .search {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hereiam {
+    width: 200px;
+    height: 200px;
+  }
+
+  .logo-hidden {
+    display: flex;
+    justify-content: center;
   }
 }
