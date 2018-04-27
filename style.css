@@ -1,0 +1,154 @@
+body {
+  background: linear-gradient(0deg, rgba(34,195,150,1) 0%, rgba(34,193,195,1) 100%);
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  /* margin: 20px; */
+  border-radius: 100%;
+  background: green;
+}
+
+.hereiam {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  /* margin: 20px; */
+  border-radius: 100%;
+  background: blueviolet;
+}
+
+.font-face-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-face-rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.live-map {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  transform: rotate(-15deg);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 36px;
+  transform: rotate(-15deg);
+  text-align: center;
+  display: hidden;
+}
+
+#dummymap {
+  width: 85%;
+  height: 85%;
+}
+
+.logo {
+  position: relative;
+  text-align: center;
+}
+
+.shift {
+  position: relative;
+  top: -20px;
+}
+
+.top-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.pointer {
+  font-size:30px;
+  cursor:pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 460px) {
+  #dummymap {
+    width: 50%;
+    height: 50%;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  h3 {
+    display: inline-block;
+  }
+
+  p {
+    display: none;
+  }
+}

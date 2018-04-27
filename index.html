@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find My Food Truck!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500i,700" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="Stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+  <script src="open.js"></script>
+</head>
+<body>
+
+  <div class="logo">
+    <h1 class="font-face-pacifico">FMFT!</h1>
+    <h3 class="font-face-pacifico">Find My Food Truck!</h3>
+    <p class="font-face-rubik">(Find My Food Truck!)</p>
+  </div>
+  
+  <nav class="top-left">
+    <span class="pointer" onclick="openNav()">&#9776;</span>
+  </nav>
+
+  <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="nav-element"><a href="#">Change Location</a></div>
+    <div class="nav-element"><a href="#">Account</a></div>
+    <div class="nav-element"><a href="#">About</a></div>
+    <div class="nav-element"><a href="#">Log In</a></div>
+  </div>
+
+  <main>
+    <section class="live-map"><img src="map.png" id="dummymap"></section>
+    <div class="row">
+      <div class="search"><h2 class="font-face-rubik">Search</h2></div>
+      <div class="hereiam"><h2 class="font-face-rubik">Turn On</h2></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright, 2018 AELC.</p>
+  </footer>
+
+</body>
+</html>
